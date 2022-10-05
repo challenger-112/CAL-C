@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        CALCULATOR
+    </title>
+    <link rel="icon" type="images/x-icon" href="images/d.png">
+    <link rel="stylesheet" type="text/css" href="calc.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <hr style="color: red; border: 1px solid;" />
+    <h1 style="text-align:center;">CALCULATOR TO PERFORM BASIC OPERATIONS</h1>
+    <hr style="color: red; border: 1px solid;" />
+    <div class="container">
+        <div id="box">
+            <input type="text" id="result" class="screen" style="text-align:right"/>
+            <input type="button" value="C" class="clear" onclick="clearScreen()" id="clear" />
+            <div class="keys">
+                    <input type="button" value="7" class="button" onclick="display('7')" id="7" />
+                    <input type="button" value="8" class="button" onclick="display('8')" id="8" />
+                    <input type="button" value="9" class="button" onclick="display('9')" id="9" />
+                    <input type="button" value="/" class="operator" onclick="display('/')" id="/" />
+                    <input type="button" value="4" class="button" onclick="display('4')" id="4" />
+                    <input type="button" value="5" class="button" onclick="display('5')" id="5" />
+                    <input type="button" value="6" class="button" onclick="display('6')" id="6" />
+                    <input type="button" value="*" class="operator" onclick="display('*')" id="*" />
+                    <input type="button" value="1" class="button" onclick="display('1')" id="1" />
+                    <input type="button" value="2" class="button" onclick="display('2')" id="2" />
+                    <input type="button" value="3" class="button" onclick="display('3')" id="3" />
+                    <input type="button" value="-" class="operator" onclick="display('-')" id="-" />
+                    <input type="button" value="0" class="button" onclick="display('0')" id="0" />
+                    <input type="button" value="." class="button" onclick="display('.')" id="." />
+                    <input type="button" value="=" class="button equal-sign" onclick="solve()" id="=" />
+                    <input type="button" value="+" class="operator" onclick="display('+')" id="+" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

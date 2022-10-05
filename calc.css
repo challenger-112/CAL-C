@@ -1,0 +1,106 @@
+.container {
+    height: 500px;
+    background-color: black;
+    border: 5px solid red;
+    border-radius: 100px;
+}
+
+.container>h1 {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+#calc {
+    width: 400px;
+    border: 2px solid red;
+    border-radius: 3px;
+}
+
+#box {
+    background-color: white;
+    width: 400px;
+    height: 340px;
+    border-radius: 5px;
+    border: 2px solid red;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.screen {
+    height: 12%;
+    width: 75%;
+    justify-content: left;
+    color: black;
+    font: medium;
+    cursor: default;
+    padding: 10px;
+    padding-left: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.button {
+    height: 60px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    font-size: 2rem;
+    color: #333;
+}
+
+.button:hover {
+    background-color: #eaeaea;
+}
+
+.operator {
+    color: black;
+    background-color: #eebb24;
+}
+
+.clear {
+    background-color: red;
+    border-color: #b0353a;
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+
+.clear:hover {
+    background-color: orangered;
+}
+
+.equal-sign {
+    background-color: brown;
+    border-color: black;
+    color: white;
+}
+
+.equal-sign:hover {
+    background-color: blue;
+}
+
+@media screen and (max-width : 600px){
+    #box{
+        margin-top: 16%;
+    }
+}
+@media screen and (min-width : 601px) and (max-width : 770px){
+    #box{
+        margin-top: 13%;
+    }
+}
+@media screen and (min-width : 770px) and (max-width : 992px){
+    #box{
+        margin-top: 10%;
+    }
+}
